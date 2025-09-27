@@ -13,11 +13,11 @@
 
 <style>
 	section {
-		display: flex;
+	  display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
-        margin: 15px;
+    margin: 15px;
 	} 
 </style>

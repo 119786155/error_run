@@ -23,4 +23,14 @@
 
 </script>
 
-<div bind:this={myEditorRef} contenteditable></div>
+<div class="glass-card editor-wrapper">
+  <div bind:this={myEditorRef} contenteditable></div>
+</div>
+
+<style>
+  .editor-wrapper {
+    border-radius: 6px;
+    margin: 15px;
+    padding: 15px;
+  }
+</style>

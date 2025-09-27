@@ -10,7 +10,7 @@
     const root = createRoot(rootEl)
 
     import('@excalidraw/excalidraw').then(({ Excalidraw, WelcomeScreen, MainMenu }) => {
-      const welcome = createElement(WelcomeScreen, { key: 'WelcomeScreen' })
+      const welcome = null // createElement(WelcomeScreen, { key: 'WelcomeScreen' })
       const menu = createElement(MainMenu, { key: 'MainMenu' }, [
         createElement(MainMenu.DefaultItems.LoadScene, { key: 'LoadScene' }),
         createElement(MainMenu.DefaultItems.SaveAsImage, { key: 'SaveAsImage' }),

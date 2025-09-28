@@ -27,7 +27,7 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+.app {
 	min-height: 100vh;
 	color: var(--text-color);
 	background-color: var(--bg-primary);
@@ -58,7 +58,7 @@ h1 {
 	transition: var(--transition);
 }
 
-body::after {
+.app::after {
 	content: '';
 	position: fixed;
 	top: 0;
@@ -70,7 +70,7 @@ body::after {
 	transition: var(--transition);
 }
 
-[data-theme='dark'] body::after {
+[data-theme='dark'] .app::after {
 	background: radial-gradient(circle at 50% -20%, rgba(203, 213, 225, 0.05) 0%, transparent 50%);
 }
 

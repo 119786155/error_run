@@ -1,17 +1,18 @@
 <script>
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { get } from '../lib/theme.svelte.js';
 
 	onMount(async () => {
-		const themeLib = await import('../lib/theme');
+		const { listenOsTheme } = await import('../lib/theme.svelte.js');
 
-		themeLib.listenOsThemeChange();
+		listenOsTheme();
 	});
 
 	let { children } = $props();
 </script>
 
-<div class="app">
+<div class="app" data-theme={get()}>
 	<main>
 		{@render children()}
 	</main>

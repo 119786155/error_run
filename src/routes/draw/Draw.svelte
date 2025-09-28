@@ -3,11 +3,13 @@
 	import { createRoot } from 'react-dom/client';
 	import '@excalidraw/excalidraw/index.css';
 
-	let props = $props();
+	const props = $props();
 	let rootEl;
 
 	$effect(() => {
 		const root = createRoot(rootEl);
+		// if delete this , the theme is missing automatically switch
+		const theme = props.theme;
 
 		import('@excalidraw/excalidraw').then(({ Excalidraw, WelcomeScreen, MainMenu }) => {
 			const welcome = null; // createElement(WelcomeScreen, { key: 'WelcomeScreen' })
@@ -20,7 +22,8 @@
 					key: 'ChangeCanvasBackground'
 				})
 			]);
-			const excalidraw = createElement(Excalidraw, { ...props }, [welcome, menu]);
+
+			const excalidraw = createElement(Excalidraw, { ...props, theme }, [welcome, menu]);
 			root.render(excalidraw);
 		});
 

@@ -1,13 +1,6 @@
 <script>
-  import { onMount } from 'svelte';
-  import { getTheme } from '../../lib/theme';
 	import Draw from './Draw.svelte';
-
-  let theme = $state('');
-
-	onMount(async () => {
-		theme = getTheme();
-	});
+	import { get } from '../../lib/theme.svelte.js';
 
 	let excalidrawAPI = $state();
 
@@ -17,8 +10,8 @@
 </script>
 
 <svelte:head>
-	<title>Draw</title>
+	<title>Draw {get()}</title>
 	<meta name="description" content="draw" />
 </svelte:head>
 
-<Draw excalidrawAPI={(api) => (excalidrawAPI = api)} theme={theme} />
+<Draw excalidrawAPI={(api) => (excalidrawAPI = api)} theme={get()} />

@@ -1,7 +1,15 @@
 <script>
-	import '../app.css';
+  import '../app.css';
+  import { onMount } from 'svelte';
 
-	let { children } = $props();
+  onMount(async () => {
+    const themeLib = (await import('../lib/theme'))
+
+    themeLib.listenOsThemeChange();
+  })
+
+  let { children } = $props();
+
 </script>
 
 <div class="app">

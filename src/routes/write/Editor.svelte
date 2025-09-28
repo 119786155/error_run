@@ -23,13 +23,6 @@
 
 </script>
 
-<div class="glass-card editor-wrapper">
+<div class="container">
   <div bind:this={myEditorRef} contenteditable></div>
 </div>
-
-<style>
-  .editor-wrapper {
-    margin: 15px;
-    padding: 15px;
-  }
-</style>

@@ -10,14 +10,3 @@
 <section>
 	<Poem />
 </section>
-
-<style>
-	section {
-	  display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-    margin: 15px;
-	} 
-</style>

@@ -1,10 +1,10 @@
 <script>
 	import Draw from './Draw.svelte';
-  let excalidrawAPI = $state()
+	let excalidrawAPI = $state();
 
-  $effect(() => {
-    excalidrawAPI?.onChange(console.log)
-  })
+	$effect(() => {
+		excalidrawAPI?.onChange(console.log);
+	});
 </script>
 
 <svelte:head>

@@ -1,15 +1,14 @@
 <script>
-  import '../app.css';
-  import { onMount } from 'svelte';
+	import '../app.css';
+	import { onMount } from 'svelte';
 
-  onMount(async () => {
-    const themeLib = (await import('../lib/theme'))
+	onMount(async () => {
+		const themeLib = await import('../lib/theme');
 
-    themeLib.listenOsThemeChange();
-  })
+		themeLib.listenOsThemeChange();
+	});
 
-  let { children } = $props();
-
+	let { children } = $props();
 </script>
 
 <div class="app">
@@ -17,9 +16,8 @@
 		{@render children()}
 	</main>
 
-	<footer>
-	</footer>
+	<footer></footer>
 </div>
 
-<style>	
+<style>
 </style>

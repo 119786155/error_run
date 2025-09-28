@@ -1,111 +1,113 @@
 :root {
-  --transition: all 0.3s ease;
+	--transition: all 0.3s ease;
 }
 
-[data-theme="light"] {
-  --bg-primary: #f0f4f8;
-  --bg-secondary: #d9e2ec;
-  --text-color: #2d3748;
-  --accent-color: #4a5568;
-  --card-bg: #ffffff;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+[data-theme='light'] {
+	--bg-primary: #f0f4f8;
+	--bg-secondary: #d9e2ec;
+	--text-color: #2d3748;
+	--accent-color: #4a5568;
+	--card-bg: #ffffff;
+	--shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="dark"] {
-  --bg-primary: #121826;
-  --bg-secondary: #1e293b;
-  --text-color: #f8fafc;
-  --accent-color: #cbd5e1;
-  --card-bg: #0f172a;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+[data-theme='dark'] {
+	--bg-primary: #121826;
+	--bg-secondary: #1e293b;
+	--text-color: #f8fafc;
+	--accent-color: #cbd5e1;
+	--card-bg: #0f172a;
+	--shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  color: var(--text-color);
-  background-color: var(--bg-primary);
-  background-image:
-    linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%),
-    radial-gradient(rgba(74, 85, 104, 0.05) 1px, transparent 1px);
-  background-size: 100% 100%, 30px 30px;
-  background-blend-mode: overlay;
-  transition: var(--transition);
-  padding: 2rem;
+	min-height: 100vh;
+	color: var(--text-color);
+	background-color: var(--bg-primary);
+	background-image:
+		linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%),
+		radial-gradient(rgba(74, 85, 104, 0.05) 1px, transparent 1px);
+	background-size:
+		100% 100%,
+		30px 30px;
+	background-blend-mode: overlay;
+	transition: var(--transition);
+	padding: 2rem;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: var(--card-bg);
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+	background: var(--card-bg);
+	border-radius: 1rem;
+	box-shadow: var(--shadow);
+	transition: var(--transition);
 }
 
 h1 {
-  margin-bottom: 1.5rem;
-  color: var(--accent-color);
-  transition: var(--transition);
+	margin-bottom: 1.5rem;
+	color: var(--accent-color);
+	transition: var(--transition);
 }
 
 .theme-toggle {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  background: var(--card-bg);
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	background: var(--card-bg);
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition);
 }
 
 .theme-toggle::before {
-  content: "🌞";
-  font-size: 1.5rem;
-  transition: var(--transition);
+	content: '🌞';
+	font-size: 1.5rem;
+	transition: var(--transition);
 }
 
-[data-theme="dark"] .theme-toggle::before {
-  content: "🌙";
+[data-theme='dark'] .theme-toggle::before {
+	content: '🌙';
 }
 
 body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 50% -20%, rgba(74, 85, 104, 0.1) 0%, transparent 50%);
-  pointer-events: none;
-  transition: var(--transition);
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle at 50% -20%, rgba(74, 85, 104, 0.1) 0%, transparent 50%);
+	pointer-events: none;
+	transition: var(--transition);
 }
 
-[data-theme="dark"] body::after {
-  background: radial-gradient(circle at 50% -20%, rgba(203, 213, 225, 0.05) 0%, transparent 50%);
+[data-theme='dark'] body::after {
+	background: radial-gradient(circle at 50% -20%, rgba(203, 213, 225, 0.05) 0%, transparent 50%);
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 1.5rem;
-  }
+	.container {
+		padding: 1.5rem;
+	}
 
-  .theme-toggle {
-    width: 40px;
-    height: 40px;
-  }
+	.theme-toggle {
+		width: 40px;
+		height: 40px;
+	}
 }

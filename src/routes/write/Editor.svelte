@@ -1,28 +1,25 @@
 <script>
-  import { registerRichText } from '@lexical/rich-text';
-  import { mergeRegister } from '@lexical/utils';
-  import { createEditor } from 'lexical'
-  import { onMount } from 'svelte';
+	import { registerRichText } from '@lexical/rich-text';
+	import { mergeRegister } from '@lexical/utils';
+	import { createEditor } from 'lexical';
+	import { onMount } from 'svelte';
 
-  const config = {
-    namespace: 'MyEditor',
-    onError: console.error
-  }
+	const config = {
+		namespace: 'MyEditor',
+		onError: console.error
+	};
 
-  const editor = createEditor(config);
+	const editor = createEditor(config);
 
-  let myEditorRef;
+	let myEditorRef;
 
-  onMount(() => {
-    editor.setRootElement(myEditorRef);
+	onMount(() => {
+		editor.setRootElement(myEditorRef);
 
-    mergeRegister(
-      registerRichText(editor)
-    )
-  })
-
+		mergeRegister(registerRichText(editor));
+	});
 </script>
 
 <div class="container">
-  <div bind:this={myEditorRef} contenteditable></div>
+	<div bind:this={myEditorRef} contenteditable></div>
 </div>

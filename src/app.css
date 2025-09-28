@@ -58,33 +58,6 @@ h1 {
 	transition: var(--transition);
 }
 
-.theme-toggle {
-	position: fixed;
-	top: 2rem;
-	right: 2rem;
-	background: var(--card-bg);
-	border: none;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	box-shadow: var(--shadow);
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: var(--transition);
-}
-
-.theme-toggle::before {
-	content: '🌞';
-	font-size: 1.5rem;
-	transition: var(--transition);
-}
-
-[data-theme='dark'] .theme-toggle::before {
-	content: '🌙';
-}
-
 body::after {
 	content: '';
 	position: fixed;

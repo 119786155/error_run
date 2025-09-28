@@ -1,10 +1,8 @@
 const MEDIA_QUERY = '(prefers-color-scheme: dark)';
 
-export const setTheme = () => {
-	const theme = window.matchMedia(MEDIA_QUERY).matches ? 'dark' : 'light';
+export const getTheme = () => window?.matchMedia?.(MEDIA_QUERY)?.matches ? 'dark' : 'light';
 
-	document.documentElement.dataset.theme = theme;
-};
+export const setTheme = () => document.documentElement.dataset.theme = getTheme();
 
 export const listenOsThemeChange = () => {
 	if (!window.matchMedia || typeof window.matchMedia !== 'function') return;

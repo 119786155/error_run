@@ -13,7 +13,7 @@ export const listenOsTheme = () => {
 
 	set(getCurrentOsTheme());
 
-	window.matchMedia(MEDIA_QUERY).addEventListener('change', (event) => {
+	window.matchMedia(MEDIA_QUERY).addEventListener('change', () => {
 		set(getCurrentOsTheme());
 	});
 };

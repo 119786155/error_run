@@ -11,7 +11,7 @@
 		// if delete this , the theme is missing automatically switch
 		const theme = props.theme;
 
-		import('@excalidraw/excalidraw').then(({ Excalidraw, WelcomeScreen, MainMenu }) => {
+		import('@excalidraw/excalidraw').then(({ Excalidraw, MainMenu }) => {
 			const welcome = null; // createElement(WelcomeScreen, { key: 'WelcomeScreen' })
 			const menu = createElement(MainMenu, { key: 'MainMenu' }, [
 				createElement(MainMenu.DefaultItems.LoadScene, { key: 'LoadScene' }),
@@ -35,6 +35,6 @@
 
 <style>
 	.root {
-		height: 95svh;
+		height: 100svh;
 	}
 </style>

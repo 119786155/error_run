@@ -28,6 +28,7 @@
 		background: var(--card-bg);
 		box-shadow: var(--shadow);
 		transition: var(--transition);
+    -webkit-tap-highlight-color: transparent;
 	}
 
 	nav:hover {
@@ -53,24 +54,24 @@
 	}
 
 	.menu-list a {
-		color: black;
+		color: #666;
 		cursor: pointer;
 		text-decoration: none;
 	}
 
 	.menu-list a:hover {
-		color: darkgray;
+		color: #aaa;
 	}
 
 	.glass-card {
-		background: rgba(255, 255, 255, 0.15);
-		backdrop-filter: blur(20px);
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		box-shadow:
 			0 8px 32px rgba(0, 0, 0, 0.1),
 			inset 0 1px 0 rgba(255, 255, 255, 0.5),
 			inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-			inset 0 0 20px 10px rgba(255, 255, 255, 1);
+			inset 0 0 0px 0px rgba(255, 255, 255, 0);
 		overflow: hidden;
 	}
 

@@ -20,6 +20,6 @@
 	});
 </script>
 
-<div class="container">
+<div class="editor container">
 	<div bind:this={myEditorRef} contenteditable></div>
 </div>

@@ -1,6 +1,6 @@
 <div class="poem container">
 	<h1>Ozymandias</h1>
-	<p>Percy Bysshe Shelley <i>(1792-1822)</i></p>
+	<p class="author">Percy Bysshe Shelley <i>(1792-1822)</i></p>
 	<p>
 		I met a traveler from an antique land Who said: “Two vast and trunkless legs of stone Stand in
 		the desert . . . Near them, on the sand, Half sunk, a shattered visage lies, whose frown, And
@@ -11,3 +11,11 @@
 		boundless and bare The lone and level sands stretch far away.”
 	</p>
 </div>
+
+<style>
+	.author {
+		color: gray;
+		font-size: 80%;
+		margin-bottom: 15px;
+	}
+</style>

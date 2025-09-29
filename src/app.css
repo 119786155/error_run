@@ -76,6 +76,7 @@ h1 {
 @media (max-width: 768px) {
 	.container {
 		padding: 1.5rem;
+		margin: 1.5rem;
 	}
 
 	.theme-toggle {

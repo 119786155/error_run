@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Draw {get()}</title>
+	<title>Draw</title>
 	<meta name="description" content="draw" />
 </svelte:head>
 

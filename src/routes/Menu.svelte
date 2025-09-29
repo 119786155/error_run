@@ -32,6 +32,7 @@
 		box-shadow: var(--shadow);
 		transition: var(--transition);
 		-webkit-tap-highlight-color: transparent;
+		z-index: 10;
 	}
 
 	nav:hover {

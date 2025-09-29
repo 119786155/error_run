@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import Menu from './Menu.svelte';
 	import { get } from '../lib/theme.svelte.js';
 
 	onMount(async () => {
@@ -18,7 +19,5 @@
 	</main>
 
 	<footer></footer>
+	<Menu />
 </div>
-
-<style>
-</style>

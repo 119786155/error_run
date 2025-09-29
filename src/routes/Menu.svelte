@@ -13,6 +13,9 @@
 		<li aria-current={page.url.pathname === '/draw' ? 'page' : undefined}>
 			<a href="/draw">Draw</a>
 		</li>
+		<li aria-current={page.url.pathname === '/chart' ? 'page' : undefined}>
+			<a href="/chart">Chart</a>
+		</li>
 	</ul>
 </nav>
 
@@ -38,7 +41,7 @@
 	.menu-list {
 		display: none;
 		position: absolute;
-		right: 25px;
+		right: 28px;
 		top: 15px;
 		transition: var(--transition);
 	}
@@ -49,7 +52,7 @@
 
 	.menu-list li {
 		list-style: none;
-		margin-top: 12px;
+		margin-top: 9px;
 	}
 
 	.menu-list a {

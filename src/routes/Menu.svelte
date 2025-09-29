@@ -23,7 +23,7 @@
 		border-radius: 50%;
 		position: fixed;
 		left: -115px;
-		bottom: -115px;
+		bottom: 50%;
 		cursor: pointer;
 		background: var(--card-bg);
 		box-shadow: var(--shadow);
@@ -33,7 +33,6 @@
 
 	nav:hover {
 		left: -65px;
-		bottom: -65px;
 	}
 
 	.menu-list {
@@ -50,7 +49,7 @@
 
 	.menu-list li {
 		list-style: none;
-		margin-top: 3px;
+		margin-top: 12px;
 	}
 
 	.menu-list a {
@@ -59,7 +58,8 @@
 		text-decoration: none;
 	}
 
-	.menu-list a:hover {
+	.menu-list a:hover,
+	.menu-list li[aria-current='page'] a {
 		color: #aaa;
 	}
 

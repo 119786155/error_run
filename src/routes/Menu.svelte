@@ -28,7 +28,7 @@
 		background: var(--card-bg);
 		box-shadow: var(--shadow);
 		transition: var(--transition);
-    -webkit-tap-highlight-color: transparent;
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	nav:hover {

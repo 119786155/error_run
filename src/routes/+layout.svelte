@@ -18,6 +18,25 @@
 		{@render children()}
 	</main>
 
-	<footer></footer>
+	<footer>
+		<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2025130546号</a>
+	</footer>
 	<Menu />
 </div>
+
+<style>
+	footer {
+		text-align: center;
+	}
+
+	footer a {
+		display: inline-block;
+		margin: 2rem;
+		color: #666;
+		text-decoration: none;
+	}
+
+	footer a:hover {
+		color: #888;
+	}
+</style>

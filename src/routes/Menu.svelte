@@ -44,7 +44,7 @@
 	.menu-list {
 		display: none;
 		position: absolute;
-		right: 28px;
+		right: 42px;
 		top: 15px;
 		transition: var(--transition);
 	}

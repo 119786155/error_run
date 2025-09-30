@@ -1,15 +1,12 @@
 <div class="poem container">
-	<h1>Ozymandias</h1>
-	<p class="author">Percy Bysshe Shelley <i>(1792-1822)</i></p>
-	<p>
-		I met a traveler from an antique land Who said: “Two vast and trunkless legs of stone Stand in
-		the desert . . . Near them, on the sand, Half sunk, a shattered visage lies, whose frown, And
-		wrinkled lip, and sneer of cold command, Tell that its sculptor well those passions read Which
-		yet survive, stamped on these lifeless things, The hand that mocked them, and the heart that
-		fed: And on the pedestal these words appear: ‘My name is Ozymandias, king of kings: Look on my
-		works, ye Mighty, and despair!’ Nothing beside remains. Round the decay Of that colossal wreck,
-		boundless and bare The lone and level sands stretch far away.”
-	</p>
+	<h1>道德经</h1>
+	<p class="author">李耳 (字伯阳) <i>(公元前571年—公元前470年)</i></p>
+	<p>信言不美，美言不信。</p>
+	<p>善者不辩，辩者不善。</p>
+	<p>知者不博，博者不知。</p>
+	<p>圣人不积，既以为人己愈有，既以与人己愈多。</p>
+	<p>天之道，利而不害。</p>
+	<p>圣人之道，为而不争。</p>
 </div>
 
 <style>

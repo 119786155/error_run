@@ -32,6 +32,7 @@
 		margin: 2rem;
 		color: #666;
 		text-decoration: none;
+		font-size: 80%;
 	}
 
 	footer a:hover {

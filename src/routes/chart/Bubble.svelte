@@ -113,8 +113,10 @@
 	<h1>Bubble</h1>
 	<canvas bind:this={chartCanvas} id="bubbleChart" height="300"></canvas>
 	<div>
-		{#each actions as item}
-			<button onclick={() => item.handler(chart)} class="bubble-char-btn">{item.name}</button>
+		{#each actions as item, index (index)}
+			<button onclick={() => item.handler(chart)} class="bubble-char-btn" key={index}
+				>{item.name}</button
+			>
 		{/each}
 	</div>
 </div>

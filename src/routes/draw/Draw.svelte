@@ -35,6 +35,6 @@
 
 <style>
 	.root {
-		height: 100svh;
+		height: 92svh;
 	}
 </style>

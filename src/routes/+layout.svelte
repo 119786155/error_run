@@ -1,7 +1,6 @@
 <script>
 	import '../app.css';
 	import { onMount } from 'svelte';
-	import Menu from './Menu.svelte';
 	import { get } from '../lib/theme.svelte.js';
 
 	onMount(async () => {
@@ -21,7 +20,6 @@
 	<footer>
 		<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2025130546号</a>
 	</footer>
-	<Menu />
 </div>
 
 <style>

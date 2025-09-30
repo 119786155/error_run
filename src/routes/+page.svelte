@@ -1,12 +1,12 @@
 <script>
-	import Poem from './Poem.svelte';
+	import Story from './Story.svelte';
 </script>
 
 <svelte:head>
-	<title>Poem</title>
+	<title>小本本</title>
 	<meta name="description" content="poem" />
 </svelte:head>
 
 <section>
-	<Poem />
+	<Story />
 </section>

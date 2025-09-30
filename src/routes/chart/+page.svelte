@@ -1,5 +1,6 @@
 <script>
 	import Bar from './Bar.svelte';
+	import Bubble from './Bubble.svelte';
 </script>
 
 <svelte:head>
@@ -7,4 +8,6 @@
 	<meta name="description" content="chart" />
 </svelte:head>
 
+<Bubble />
+<hr />
 <Bar />

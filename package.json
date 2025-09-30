@@ -26,6 +26,7 @@
 	},
 	"dependencies": {
 		"@excalidraw/excalidraw": "^0.18.0",
+		"@kurkle/color": "^0.4.0",
 		"@lexical/rich-text": "^0.36.1",
 		"@lexical/utils": "^0.36.1",
 		"chart.js": "^4.5.0",

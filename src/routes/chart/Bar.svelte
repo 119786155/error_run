@@ -32,5 +32,6 @@
 </script>
 
 <div class="container">
-	<canvas bind:this={chartCanvas} id="myChart"></canvas>
+	<h1>Bar</h1>
+	<canvas bind:this={chartCanvas} id="barChart"></canvas>
 </div>

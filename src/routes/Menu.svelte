@@ -5,19 +5,17 @@
 <nav class="glass-card">
 	<ul class="menu-list">
 		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-			<a href="/">诗</a>
+			<a href="/">Story</a>
 		</li>
 		<li aria-current={page.url.pathname === '/write' ? 'page' : undefined}>
-			<a href="/write">写</a>
+			<a href="/write">Write</a>
 		</li>
 		<li aria-current={page.url.pathname === '/draw' ? 'page' : undefined}>
-			<a href="/draw">画</a>
+			<a href="/draw">Draw</a>
 		</li>
-		<!--
 		<li aria-current={page.url.pathname === '/chart' ? 'page' : undefined}>
 			<a href="/chart">Chart</a>
 		</li>
-    -->
 	</ul>
 </nav>
 
@@ -44,8 +42,8 @@
 	.menu-list {
 		display: none;
 		position: absolute;
-		right: 42px;
-		top: 15px;
+		right: 30px;
+		top: 5px;
 		transition: var(--transition);
 	}
 

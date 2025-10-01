@@ -2,6 +2,10 @@
 	import '../app.css';
 	import { onMount } from 'svelte';
 	import { get } from '../lib/theme.svelte.js';
+	import { page } from '$app/state';
+	import Menu from './Menu.svelte';
+
+	const enableMenu = page.url.searchParams.get('m');
 
 	onMount(async () => {
 		const { listenOsTheme } = await import('../lib/theme.svelte.js');
@@ -20,6 +24,10 @@
 	<footer>
 		<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2025130546号</a>
 	</footer>
+
+	{#if enableMenu}
+		<Menu />
+	{/if}
 </div>
 
 <style>

@@ -22,6 +22,8 @@
 	</main>
 
 	<footer>
+    <img src="/batb.png" />
+    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=13010802002611" rel="noreferrer" target="_blank" class="gaba">冀公网安备13010802002611号</a>
 		<a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2025130546号</a>
 	</footer>
 
@@ -33,7 +35,7 @@
 <style>
 	footer {
 		text-align: center;
-	}
+	} 
 
 	footer a {
 		display: inline-block;
@@ -46,4 +48,14 @@
 	footer a:hover {
 		color: #888;
 	}
+
+  footer img {
+    width: 16px;
+    position: relative;
+    top: 4px;
+  }
+
+  footer a.gaba {
+    margin-left: 0;
+  }
 </style>

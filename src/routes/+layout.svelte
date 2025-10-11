@@ -39,7 +39,7 @@
 
 	footer a {
 		display: inline-block;
-		margin: 2rem;
+		margin-right: 5px;
 		color: #666;
 		text-decoration: none;
 		font-size: 80%;

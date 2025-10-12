@@ -30,6 +30,7 @@
 		"chart.js": "^4.5.0",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
+		"svelte-i18n": "^4.0.1",
 		"svelte-lexical": "^0.6.2"
 	}
 }

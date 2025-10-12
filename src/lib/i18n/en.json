@@ -1,0 +1,38 @@
+{
+	"site": {
+		"title": "Tiny Notebook"
+	},
+	"pages": {
+		"story": {
+			"title": "Story",
+			"content": {
+				"title": "Tu Duo Duo's Magic Buttons",
+				"author": "",
+				"createtime": "September 30, 2025",
+				"paragraph1": "Tu Duo Duo had a quirky hobby — collecting buttons.",
+				"paragraph2": "Her cloth pocket was stuffed with round buttons, square buttons, and patterned buttons. She even held three of the shiniest ones in her arms when she slept.",
+				"paragraph3": "One evening, raindrops tapped “dada” against the leaves. Tu Duo Duo hid in an old oak tree hollow, and suddenly, her hand brushed against something soft and fluffy.",
+				"paragraph4": "It was a cloth fox missing an eye! An empty thread loop was sewn where its eye should be, making it look so pitiful.",
+				"paragraph5": "“Want to try this?” Tu Duo Duo took out a red button. As soon as she sewed it on, the cloth fox’s eye suddenly flickered — and to her surprise, it spoke: “Thank you, little rabbit!”",
+				"paragraph6": "It turned out the cloth fox was Little Hedgehog’s old toy, which the wind had blown into the tree hollow. Tu Duo Duo found a blue button for its other eye. Right away, the cloth fox jumped up, wiggled the hole in its tail, and said: ”If we had a star-shaped button to fix this spot, I could take you to see the fireflies!“",
+				"paragraph7": "Tu Duo Duo quickly rummaged through her pocket — and sure enough, she felt a star-shaped button that glowed faintly!",
+				"paragraph8": "As soon as she finished sewing it on, the cloth fox’s tail lifted up and carried Tu Duo Duo out of the tree hollow.",
+				"paragraph9": "In the night, fireflies swirled around them like scattered stars. From far away, they heard Little Hedgehog’s excited shout",
+				"paragraph10": "— turns out he was holding a lantern, looking for the cloth fox!",
+				"paragraph11": "Later on, Tu Duo Duo always kept an empty spot in her button pocket. She said it was for the next friend who needed help."
+			}
+		},
+		"poem": {
+			"title": "Poen"
+		},
+		"write": {
+			"title": "Write"
+		},
+		"draw": {
+			"title": "Draw"
+		},
+		"chart": {
+			"title": "Chart"
+		}
+	}
+}

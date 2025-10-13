@@ -19,7 +19,9 @@
 	--card-bg: #0f172a;
 	--shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-
+[data-theme='dark'] .i18n-selector {
+	color: #fff;
+}
 * {
 	margin: 0;
 	padding: 0;

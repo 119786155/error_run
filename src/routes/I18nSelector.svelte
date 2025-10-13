@@ -1,10 +1,15 @@
 <script>
 	import { locale, locales } from 'svelte-i18n';
+
+	const map = {
+		'zh-CN': '中文',
+		en: 'English'
+	};
 </script>
 
 <select bind:value={$locale} class="i18n-selector">
 	{#each $locales as locale}
-		<option value={locale}>{locale}</option>
+		<option value={locale}>{map[locale]}</option>
 	{/each}
 </select>
 

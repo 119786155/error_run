@@ -5,7 +5,7 @@
 <footer>
 	<div>
 		<div>
-			<img src="/batb.png" />
+			<img src="/batb.png" alt="冀公网安备13010802002611号" />
 			<a
 				href="https://beian.mps.gov.cn/#/query/webSearch?code=13010802002611"
 				rel="noreferrer"

@@ -19,10 +19,10 @@
 	let { children } = $props();
 </script>
 
-{#if $isLoading}
-	Please wait...
-{:else}
-	<div class="app" data-theme={get()}>
+<div class="app" data-theme={get()}>
+	{#if $isLoading}
+		<img class="loading" src="/loading.svg" alt="Please wait..." />
+	{:else}
 		<main>
 			{@render children()}
 		</main>
@@ -32,5 +32,29 @@
 		{#if enableMenu}
 			<Menu />
 		{/if}
-	</div>
-{/if}
+	{/if}
+</div>
+
+<style>
+	.loading {
+		animation: rotation 5.5s infinite linear;
+		transform-origin: 50% 50%;
+		width: 400px;
+		position: absolute;
+		left: calc((100% - 400px) / 2);
+		top: calc((100% - 400px) / 2);
+	}
+
+	@keyframes rotation {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+
+	[data-theme='dark'] .loading {
+		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+	}
+</style>

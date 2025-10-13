@@ -13,5 +13,6 @@
 		border: none;
 		background-color: transparent;
 		margin-left: 20px;
+		outline: none;
 	}
 </style>

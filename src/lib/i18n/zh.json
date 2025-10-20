@@ -1,6 +1,10 @@
 {
 	"site": {
-		"title": "小本本"
+		"title": "小本本",
+		"footer": {
+			"PublicSecurityRecordation": "冀公网安备13010802002611号",
+			"IcpRecordation": "冀ICP备2025130546号"
+		}
 	},
 	"pages": {
 		"story": {

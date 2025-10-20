@@ -1,6 +1,10 @@
 {
 	"site": {
-		"title": "Tiny Notebook"
+		"title": "Tiny Notebook",
+		"footer": {
+			"PublicSecurityRecordation": "Hebei Public Security Recordation for Public Network No. 13010802002611",
+			"IcpRecordation": "Hebei ICP Recordation No. 2025130546"
+		}
 	},
 	"pages": {
 		"story": {

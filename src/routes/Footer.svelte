@@ -24,14 +24,12 @@
 <style>
 	footer {
 		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding-top: 10px;
+		padding: 10px 10px 0;
+		justify-content: space-around;
 	}
 
 	footer a {
 		display: inline-block;
-		margin-right: 5px;
 		color: #666;
 		text-decoration: none;
 		font-size: 80%;
@@ -43,11 +41,14 @@
 
 	footer img {
 		width: 16px;
-		position: relative;
-		top: 4px;
+		margin-right: 3px;
 	}
 
 	footer a.gaba {
-		margin-left: 0;
+	}
+
+	footer > div:first-child {
+		display: flex;
+		align-items: start;
 	}
 </style>

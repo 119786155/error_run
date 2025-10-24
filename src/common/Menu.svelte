@@ -33,7 +33,7 @@
 		height: 12rem;
 		border-radius: 50%;
 		position: fixed;
-		left: -10%;
+		left: -10rem;
 		bottom: 20%;
 		cursor: pointer;
 		background: var(--card-bg);
@@ -44,7 +44,7 @@
 	}
 
 	nav:hover {
-		left: -6%;
+		left: -6.5rem;
 	}
 
 	.menu-list {

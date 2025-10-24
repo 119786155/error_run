@@ -29,11 +29,11 @@
 
 <style>
 	nav {
-		width: 12rem;
-		height: 12rem;
+		width: 15rem;
+		height: 15rem;
 		border-radius: 50%;
 		position: fixed;
-		left: -10rem;
+		left: -12rem;
 		bottom: 20%;
 		cursor: pointer;
 		background: var(--card-bg);
@@ -44,7 +44,7 @@
 	}
 
 	nav:hover {
-		left: -6.5rem;
+		left: -9rem;
 	}
 
 	.menu-list {
@@ -52,6 +52,7 @@
 		position: absolute;
 		right: 2.8rem;
 		top: 0.3rem;
+		width: 13rem;
 		transition: var(--transition);
 	}
 
@@ -61,18 +62,24 @@
 
 	.menu-list li {
 		list-style: none;
-		margin-top: 12px;
+		text-align: right;
+		margin-top: 0.8rem;
+		padding-right: 0.5rem;
 	}
 
 	.menu-list a {
 		color: var(--text-color);
 		cursor: pointer;
 		text-decoration: none;
+		display: inline-block;
+		width: 100%;
+		height: 2rem;
 	}
 
 	.menu-list a:hover,
 	.menu-list li[aria-current='page'] a {
 		color: var(--text-color);
+		opacity: 0.5;
 	}
 
 	.glass-card {

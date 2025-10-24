@@ -1,31 +1,39 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 	import { page } from '$app/state';
 </script>
 
 <nav class="glass-card">
 	<ul class="menu-list">
-		<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-			<a href="/">Story</a>
+		<li
+			aria-current={page.url.pathname === '/' || page.url.pathname === '/story'
+				? 'page'
+				: undefined}
+		>
+			<a href="/">{$_('pages.story.title')}</a>
+		</li>
+		<li aria-current={page.url.pathname === '/poem' ? 'page' : undefined}>
+			<a href="/write">{$_('pages.poem.title')}</a>
 		</li>
 		<li aria-current={page.url.pathname === '/write' ? 'page' : undefined}>
-			<a href="/write">Write</a>
+			<a href="/write">{$_('pages.write.title')}</a>
 		</li>
 		<li aria-current={page.url.pathname === '/draw' ? 'page' : undefined}>
-			<a href="/draw">Draw</a>
+			<a href="/draw">{$_('pages.draw.title')}</a>
 		</li>
 		<li aria-current={page.url.pathname === '/chart' ? 'page' : undefined}>
-			<a href="/chart">Chart</a>
+			<a href="/chart">{$_('pages.chart.title')}</a>
 		</li>
 	</ul>
 </nav>
 
 <style>
 	nav {
-		width: 150px;
-		height: 150px;
+		width: 12rem;
+		height: 12rem;
 		border-radius: 50%;
 		position: fixed;
-		left: -115px;
+		left: -10%;
 		bottom: 20%;
 		cursor: pointer;
 		background: var(--card-bg);
@@ -36,14 +44,14 @@
 	}
 
 	nav:hover {
-		left: -65px;
+		left: -6%;
 	}
 
 	.menu-list {
 		display: none;
 		position: absolute;
-		right: 30px;
-		top: 5px;
+		right: 2.8rem;
+		top: 0.2rem;
 		transition: var(--transition);
 	}
 

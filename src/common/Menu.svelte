@@ -13,7 +13,7 @@
 			<a href="/">{$_('pages.story.title')}</a>
 		</li>
 		<li aria-current={page.url.pathname === '/poem' ? 'page' : undefined}>
-			<a href="/write">{$_('pages.poem.title')}</a>
+			<a href="/poem">{$_('pages.poem.title')}</a>
 		</li>
 		<li aria-current={page.url.pathname === '/write' ? 'page' : undefined}>
 			<a href="/write">{$_('pages.write.title')}</a>

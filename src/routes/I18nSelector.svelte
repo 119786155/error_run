@@ -19,5 +19,6 @@
 		background-color: transparent;
 		margin-left: 20px;
 		outline: none;
+		color: var(--text-color);
 	}
 </style>

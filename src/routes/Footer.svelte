@@ -30,13 +30,13 @@
 
 	footer a {
 		display: inline-block;
-		color: #666;
+		color: var(--text-color);
 		text-decoration: none;
 		font-size: 80%;
 	}
 
 	footer a:hover {
-		color: #888;
+		color: var(--text-color);
 	}
 
 	footer img {

@@ -11,7 +11,7 @@
 
 <style>
 	.author {
-		color: gray;
+		color: var(--text-color);
 		font-size: 80%;
 		margin-bottom: 15px;
 	}

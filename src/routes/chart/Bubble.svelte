@@ -131,5 +131,6 @@
 		border-radius: 3px;
 		box-shadow: var(--shadow);
 		transition: var(--transition);
+		color: var(--text-color);
 	}
 </style>

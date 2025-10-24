@@ -57,14 +57,14 @@
 	}
 
 	.menu-list a {
-		color: #666;
+		color: var(--text-color);
 		cursor: pointer;
 		text-decoration: none;
 	}
 
 	.menu-list a:hover,
 	.menu-list li[aria-current='page'] a {
-		color: #aaa;
+		color: var(--text-color);
 	}
 
 	.glass-card {

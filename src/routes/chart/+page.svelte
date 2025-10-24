@@ -9,5 +9,3 @@
 </svelte:head>
 
 <Bubble />
-<hr />
-<Bar />

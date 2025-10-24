@@ -51,7 +51,7 @@
 		display: none;
 		position: absolute;
 		right: 2.8rem;
-		top: 0.2rem;
+		top: 0.3rem;
 		transition: var(--transition);
 	}
 

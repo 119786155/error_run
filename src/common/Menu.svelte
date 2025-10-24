@@ -33,7 +33,7 @@
 		height: 15rem;
 		border-radius: 50%;
 		position: fixed;
-		left: -12rem;
+		left: -14rem;
 		bottom: 20%;
 		cursor: pointer;
 		background: var(--card-bg);

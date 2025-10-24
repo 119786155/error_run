@@ -14,7 +14,7 @@
 </script>
 
 <Composer {initialConfig}>
-	<div class="editor-shell svelte-lexical">
+	<div class="svelte-lexical">
 		<Toolbar />
 		<div class="editor-container">
 			<div class="editor-scroller">

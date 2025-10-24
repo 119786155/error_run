@@ -5,8 +5,8 @@
 	import { onMount } from 'svelte';
 	import { get } from '../lib/theme.svelte.js';
 	import { page } from '$app/state';
-	import Menu from './Menu.svelte';
-	import Footer from './Footer.svelte';
+	import Menu from '../common/Menu.svelte';
+	import Footer from '../common/Footer.svelte';
 
 	const enableMenu = page.url.searchParams.get('m');
 

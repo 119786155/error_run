@@ -7,18 +7,8 @@
 	};
 </script>
 
-<select bind:value={$locale} class="i18n-selector">
+<select bind:value={$locale} class="bg-transparent border-none outline-none">
 	{#each $locales as locale}
 		<option value={locale}>{map[locale]}</option>
 	{/each}
 </select>
-
-<style>
-	.i18n-selector {
-		border: none;
-		background-color: transparent;
-		margin-left: 20px;
-		outline: none;
-		color: var(--text-color);
-	}
-</style>

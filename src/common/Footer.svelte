@@ -6,7 +6,7 @@
 <footer class="flex justify-around mx-5 my-3 text-xs">
 	<div class="flex items-start">
 		<img
-			class="w-[16px] mr-3 relative top-1"
+			class="w-[12px] mr-1 relative top-[2px]"
 			src="/batb.png"
 			alt={$_('site.footer.PublicSecurityRecordation')}
 		/>

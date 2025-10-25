@@ -3,7 +3,7 @@
 	import I18nSelector from './I18nSelector.svelte';
 </script>
 
-<footer class="flex justify-around mx-5 mt-3 text-xs">
+<footer class="flex justify-around mx-5 my-3 text-xs">
 	<div class="flex items-start">
 		<img
 			class="w-[16px] mr-3 relative top-1"

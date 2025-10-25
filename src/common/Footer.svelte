@@ -3,9 +3,13 @@
 	import I18nSelector from './I18nSelector.svelte';
 </script>
 
-<footer>
-	<div>
-		<img src="/batb.png" alt={$_('site.footer.PublicSecurityRecordation')} />
+<footer class="flex justify-around mx-5 mt-3">
+	<div class="flex items-start">
+		<img
+			class="w-[16px] mr-3 relative top-1"
+			src="/batb.png"
+			alt={$_('site.footer.PublicSecurityRecordation')}
+		/>
 		<a
 			href="https://beian.mps.gov.cn/#/query/webSearch?code=13010802002611"
 			rel="noreferrer"
@@ -20,35 +24,3 @@
 		<I18nSelector />
 	</div>
 </footer>
-
-<style>
-	footer {
-		display: flex;
-		padding: 10px 10px 0;
-		justify-content: space-around;
-	}
-
-	footer a {
-		display: inline-block;
-		color: var(--text-color);
-		text-decoration: none;
-		font-size: 80%;
-	}
-
-	footer a:hover {
-		color: var(--text-color);
-	}
-
-	footer img {
-		width: 16px;
-		margin-right: 3px;
-	}
-
-	footer a.gaba {
-	}
-
-	footer > div:first-child {
-		display: flex;
-		align-items: start;
-	}
-</style>

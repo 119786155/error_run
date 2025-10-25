@@ -3,7 +3,7 @@
 </script>
 
 <div class="bg-gray-100 dark:bg-gray-800 rounded-lg mx-5 my-3 px-6 py-8">
-	<h1 class="text-gray-900 dark:text-white">{$_('pages.story.content.title')}</h1>
+	<h1 class="text-gray-900 dark:text-white text-lg">{$_('pages.story.content.title')}</h1>
 	<p class="text-gray-600 dark:text-gray-500 text-xs mt-2">
 		{$_('pages.story.content.author', { default: '' })}<i>{$_('pages.story.content.createtime')}</i>
 	</p>

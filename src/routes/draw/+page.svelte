@@ -1,6 +1,5 @@
 <script>
 	import Draw from './Draw.svelte';
-	import { get } from '../../lib/theme.svelte.js';
 
 	let excalidrawAPI = $state();
 
@@ -14,4 +13,4 @@
 	<meta name="description" content="draw" />
 </svelte:head>
 
-<Draw excalidrawAPI={(api) => (excalidrawAPI = api)} theme={get()} />
+<Draw excalidrawAPI={(api) => (excalidrawAPI = api)} />

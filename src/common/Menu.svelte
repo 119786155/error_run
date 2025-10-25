@@ -44,8 +44,8 @@
 	.menu-list {
 		display: none;
 		position: absolute;
-		right: 2.8rem;
-		top: 0.3rem;
+		right: 2rem;
+		top: 2rem;
 		width: 13rem;
 		transition: var(--transition);
 	}
@@ -57,7 +57,7 @@
 	.menu-list li {
 		list-style: none;
 		text-align: right;
-		margin-top: 0.8rem;
+		margin-top: 1.5rem;
 		padding-right: 0.5rem;
 	}
 

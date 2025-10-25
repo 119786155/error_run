@@ -26,3 +26,9 @@
 		</div>
 	</div>
 </Composer>
+
+<style>
+	.editor-container {
+		min-height: 80vh;
+	}
+</style>

@@ -35,6 +35,9 @@
 		"draw": {
 			"title": "Draw"
 		},
+		"grid": {
+			"title": "Grid"
+		},
 		"chart": {
 			"title": "Chart"
 		}

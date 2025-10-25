@@ -8,7 +8,7 @@
 	},
 	"pages": {
 		"story": {
-			"title": "话",
+			"title": "小故事",
 			"content": {
 				"title": "兔朵朵的魔法纽扣",
 				"author": "",
@@ -27,16 +27,19 @@
 			}
 		},
 		"poem": {
-			"title": "诗"
+			"title": "一首诗"
 		},
 		"write": {
-			"title": "写"
+			"title": "写一写"
 		},
 		"draw": {
-			"title": "画"
+			"title": "画一画"
+		},
+		"grid": {
+			"title": "表格"
 		},
 		"chart": {
-			"title": "图"
+			"title": "统计图"
 		}
 	}
 }

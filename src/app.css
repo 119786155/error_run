@@ -53,15 +53,28 @@
 		@apply text-xs text-gray-600 dark:text-gray-500;
 	}
 
-	.footer {
-		@apply mx-5 my-3 flex justify-between text-xs;
+	header,
+	footer {
+		@apply mx-5 my-3 flex;
 	}
 
-	.footer .gaba {
+	header {
+		@apply justify-end;
+	}
+
+	header .github {
+		@apply w-[12px];
+	}
+
+	footer {
+		@apply justify-between text-xs;
+	}
+
+	footer .gaba {
 		@apply flex items-start;
 	}
 
-	.footer .gaba img {
+	footer .gaba img {
 		@apply relative top-[2px] mr-1 w-[12px];
 	}
 

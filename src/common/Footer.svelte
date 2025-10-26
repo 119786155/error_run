@@ -3,7 +3,7 @@
 	import I18nSelector from './I18nSelector.svelte';
 </script>
 
-<footer class="footer">
+<footer>
 	<div class="gaba">
 		<img src="/batb.png" alt={$_('site.footer.PublicSecurityRecordation')} />
 		<a

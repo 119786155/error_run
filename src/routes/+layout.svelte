@@ -4,6 +4,7 @@
 	import '../app.css';
 	import { page } from '$app/state';
 	import Menu from '../common/Menu.svelte';
+	import Header from '../common/Header.svelte';
 	import Footer from '../common/Footer.svelte';
 
 	initI18n();
@@ -17,6 +18,8 @@
 	{#if $isLoading}
 		<img class="loading" src="/loading.svg" alt="Please wait..." />
 	{:else}
+		<Header />
+
 		<main>
 			{@render children()}
 		</main>

@@ -1,14 +1,27 @@
 <script>
-	import { locale, locales } from 'svelte-i18n';
+	import { locale } from 'svelte-i18n';
+	import { zhLanguages } from '../lib/i18n';
 
-	const map = {
-		'zh-CN': '中文',
-		en: 'English'
+	const getSelected = (locale, type = 'zh') => {
+		const selected = { selected: 'selected' };
+
+		if (type === 'zh') {
+			return zhLanguages.includes(locale) ? selected : {};
+		}
+
+		return zhLanguages.includes(locale) ? {} : selected;
+	};
+
+	const onchange = (evt) => {
+		const value = evt.target.value;
+
+		let result = !~value.indexOf('en') && !~value.indexOf('zh') ? 'en' : value;
+
+		locale.set(result);
 	};
 </script>
 
-<select bind:value={$locale} class="bg-transparent border-none outline-none">
-	{#each $locales as locale}
-		<option value={locale}>{map[locale]}</option>
-	{/each}
+<select class="bg-transparent border-none outline-none" {onchange}>
+	<option value="zh" {...getSelected($locale)}>中文</option>
+	<option value="en" {...getSelected($locale, 'en')}>English</option>
 </select>

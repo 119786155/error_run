@@ -1,9 +1,28 @@
 import { register, init, getLocaleFromNavigator } from 'svelte-i18n';
 
-register('en', () => import('./en.json'));
-register('zh-CN', () => import('./zh.json'));
+const zhFilePath = './zh.json';
+const enFilePath = './en.json';
+const enLanguages = [
+	'en',
+	'en-AU',
+	'en-IN',
+	'en-GB',
+	'en-GB-oxendict',
+	'en-US',
+	'en-IE',
+	'en-CA',
+	'en-ZA',
+	'en-NZ'
+];
 
-init({
-	fallbackLocale: 'en',
-	initialLocale: getLocaleFromNavigator()
-});
+export const zhLanguages = ['zh', 'zh-CN', 'zh-TW', 'zh-HK'];
+
+export const initI18n = () => {
+	zhLanguages.forEach((language) => register(language, () => import(zhFilePath)));
+	enLanguages.forEach((language) => register(language, () => import(enFilePath)));
+
+	init({
+		fallbackLocale: 'en',
+		initialLocale: getLocaleFromNavigator()
+	});
+};

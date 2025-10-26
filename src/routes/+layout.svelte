@@ -1,10 +1,12 @@
 <script>
 	import { isLoading } from 'svelte-i18n';
-	import '../lib/i18n';
+	import { initI18n } from '../lib/i18n';
 	import '../app.css';
 	import { page } from '$app/state';
 	import Menu from '../common/Menu.svelte';
 	import Footer from '../common/Footer.svelte';
+
+	initI18n();
 
 	const enableMenu = page.url.searchParams.get('m');
 

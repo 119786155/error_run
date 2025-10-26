@@ -15,9 +15,7 @@
 	const onchange = (evt) => {
 		const value = evt.target.value;
 
-		let result = !~value.indexOf('en') && !~value.indexOf('zh') ? 'en' : value;
-
-		locale.set(result);
+		locale.set(~value.indexOf('zh') ? value : 'en');
 	};
 </script>
 

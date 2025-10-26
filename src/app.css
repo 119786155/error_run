@@ -5,7 +5,7 @@
 }
 
 @layer local {
-	.glass-card {
+	.glass {
 		background: rgba(255, 255, 255, 0.05);
 		backdrop-filter: blur(5px);
 		border: 1px solid rgba(255, 255, 255, 0.3);
@@ -17,7 +17,7 @@
 		overflow: hidden;
 	}
 
-	.glass-card::before {
+	.glass::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -27,7 +27,7 @@
 		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
 	}
 
-	.glass-card::after {
+	.glass::after {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -40,5 +40,16 @@
 			transparent,
 			rgba(255, 255, 255, 0.3)
 		);
+	}
+
+	.card {
+		@apply mx-5 my-3 rounded-lg bg-gray-100 px-6 py-8 *:mt-2 dark:bg-gray-800;
+	}
+	.card .title {
+		@apply text-lg text-gray-900 dark:text-white;
+	}
+
+	.card .desc {
+		@apply text-xs text-gray-600 dark:text-gray-500;
 	}
 }

@@ -3,10 +3,10 @@
 	import I18nSelector from './I18nSelector.svelte';
 </script>
 
-<footer class="flex justify-around mx-5 my-3 text-xs">
+<footer class="mx-5 my-3 flex justify-around text-xs">
 	<div class="flex items-start">
 		<img
-			class="w-[12px] mr-1 relative top-[2px]"
+			class="relative top-[2px] mr-1 w-[12px]"
 			src="/batb.png"
 			alt={$_('site.footer.PublicSecurityRecordation')}
 		/>

@@ -3,7 +3,7 @@
 	import { page } from '$app/state';
 </script>
 
-<nav class="menu-container glass-card">
+<nav class="menu-container glass">
 	<ul class="menu-list">
 		<li
 			aria-current={page.url.pathname === '/' || page.url.pathname === '/story'

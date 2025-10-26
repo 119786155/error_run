@@ -3,18 +3,13 @@
 	import I18nSelector from './I18nSelector.svelte';
 </script>
 
-<footer class="mx-5 my-3 flex justify-around text-xs">
-	<div class="flex items-start">
-		<img
-			class="relative top-[2px] mr-1 w-[12px]"
-			src="/batb.png"
-			alt={$_('site.footer.PublicSecurityRecordation')}
-		/>
+<footer class="footer">
+	<div class="gaba">
+		<img src="/batb.png" alt={$_('site.footer.PublicSecurityRecordation')} />
 		<a
 			href="https://beian.mps.gov.cn/#/query/webSearch?code=13010802002611"
 			rel="noreferrer"
-			target="_blank"
-			class="gaba">{$_('site.footer.PublicSecurityRecordation')}</a
+			target="_blank">{$_('site.footer.PublicSecurityRecordation')}</a
 		>
 	</div>
 	<div>

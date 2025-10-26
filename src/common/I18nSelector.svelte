@@ -21,7 +21,7 @@
 	};
 </script>
 
-<select class="border-none bg-transparent outline-none" {onchange}>
+<select class="i18n-selector" {onchange}>
 	<option value="zh" {...getSelected($locale)}>中文</option>
 	<option value="en" {...getSelected($locale, 'en')}>English</option>
 </select>

@@ -45,4 +45,4 @@
 	});
 </script>
 
-<div bind:this={rootEl} class="root h-[90dvh]"><Loading /></div>
+<div bind:this={rootEl} class="root h-[85dvh]"><Loading /></div>

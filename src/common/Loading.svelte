@@ -1,5 +1,5 @@
 <svg
-	class="m-auto my-8 h-auto w-15 animate-spin fill-black dark:fill-gray-400"
+	class="m-auto my-8 h-auto w-15 fill-black motion-safe:animate-[spin_3s_linear_infinite] dark:fill-gray-400"
 	height="800px"
 	width="800px"
 	version="1.1"

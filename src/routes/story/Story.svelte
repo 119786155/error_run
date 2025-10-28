@@ -5,7 +5,8 @@
 <div class="card">
 	<h1 class="title">{$_('pages.story.content.title')}</h1>
 	<p class="desc">
-		{$_('pages.story.content.author', { default: '' })}<i>{$_('pages.story.content.createtime')}</i>
+		<span class="author">{$_('pages.story.content.author', { default: '' })}</span>
+		<i>{$_('pages.story.content.createtime')}</i>
 	</p>
 	<p>{$_('pages.story.content.paragraph1')}</p>
 	<p>{$_('pages.story.content.paragraph2')}</p>

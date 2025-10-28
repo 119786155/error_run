@@ -27,7 +27,18 @@
 			}
 		},
 		"poem": {
-			"title": "Poen"
+			"title": "Poen",
+			"content": {
+				"title": "The Tao Te Ching",
+				"author": "Li Er(style name: Boyang)",
+				"createtime": "6th–5th century BCE",
+				"paragraph1": "Trustworthy words are not pleasing; pleasing words are not to be trusted.",
+				"paragraph2": "Virtuous people do not argue; argumentative people are not virtuous.",
+				"paragraph3": "The wise do not seek breadth of knowledge; the erudite (those who chase wide learning) lack true wisdom.",
+				"paragraph4": "The Sage does not hoard. By helping others, they gain more; by giving to others, they have more.",
+				"paragraph5": "Heaven's Dao benefits all without harming.",
+				"paragraph6": "The Sage's way is to act without contending."
+			}
 		},
 		"write": {
 			"title": "Write"

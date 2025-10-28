@@ -48,9 +48,8 @@
 	.card .title {
 		@apply text-lg text-gray-900 dark:text-white;
 	}
-
 	.card .desc {
-		@apply text-xs text-gray-600 dark:text-gray-500;
+		@apply flex gap-1 text-xs text-gray-600 dark:text-gray-500;
 	}
 
 	header,

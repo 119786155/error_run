@@ -27,7 +27,18 @@
 			}
 		},
 		"poem": {
-			"title": "一首诗"
+			"title": "一首诗",
+			"content": {
+				"title": "道德经",
+				"author": "李耳 (字伯阳)",
+				"createtime": "公元前571年—公元前470年",
+				"paragraph1": "信言不美，美言不信。",
+				"paragraph2": "善者不辩，辩者不善。",
+				"paragraph3": "知者不博，博者不知。",
+				"paragraph4": "圣人不积，既以为人己愈有，既以与人己愈多。",
+				"paragraph5": "天之道，利而不害。",
+				"paragraph6": "圣人之道，为而不争。"
+			}
 		},
 		"write": {
 			"title": "写一写"

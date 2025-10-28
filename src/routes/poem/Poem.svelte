@@ -1,18 +1,17 @@
-<div class="poem container">
-	<h1>道德经</h1>
-	<p class="author">李耳 (字伯阳) <i>(公元前571年—公元前470年)</i></p>
-	<p>信言不美，美言不信。</p>
-	<p>善者不辩，辩者不善。</p>
-	<p>知者不博，博者不知。</p>
-	<p>圣人不积，既以为人己愈有，既以与人己愈多。</p>
-	<p>天之道，利而不害。</p>
-	<p>圣人之道，为而不争。</p>
-</div>
+<script>
+	import { _ } from 'svelte-i18n';
+</script>
 
-<style>
-	.author {
-		color: var(--text-color);
-		font-size: 80%;
-		margin-bottom: 15px;
-	}
-</style>
+<div class="card">
+	<h1 class="title">{$_('pages.poem.content.title')}</h1>
+	<p class="desc">
+		<span class="author">{$_('pages.poem.content.author', { default: '' })}</span>
+		<i>{$_('pages.poem.content.createtime')}</i>
+	</p>
+	<p>{$_('pages.poem.content.paragraph1')}</p>
+	<p>{$_('pages.poem.content.paragraph2')}</p>
+	<p>{$_('pages.poem.content.paragraph3')}</p>
+	<p>{$_('pages.poem.content.paragraph4')}</p>
+	<p>{$_('pages.poem.content.paragraph5')}</p>
+	<p>{$_('pages.poem.content.paragraph6')}</p>
+</div>

@@ -3,15 +3,30 @@
 	import { createRoot } from 'react-dom/client';
 	import '@excalidraw/excalidraw/index.css';
 
-	const props = $props();
-
 	let rootEl;
+
+	let theme = $state('');
+
+	const setTheme = (isDark) => {
+		theme = isDark ? 'dark' : '';
+	};
+
+	const themeDarkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+	setTheme(themeDarkQuery.matches);
+
+	themeDarkQuery.addEventListener('change', (mediaQueryListEvent) => {
+		setTheme(themeDarkQuery.matches);
+	});
 
 	$effect(() => {
 		const root = createRoot(rootEl);
 
+		// The $effect fails to be invoked after the $theme update, so this line is needed.
+		const props = { theme };
+
 		import('@excalidraw/excalidraw').then(({ Excalidraw, MainMenu }) => {
-			const welcome = null; // createElement(WelcomeScreen, { key: 'WelcomeScreen' })
+			const welcome = null;
 			const menu = createElement(MainMenu, { key: 'MainMenu' }, [
 				createElement(MainMenu.DefaultItems.LoadScene, { key: 'LoadScene' }),
 				createElement(MainMenu.DefaultItems.SaveAsImage, { key: 'SaveAsImage' }),
@@ -30,10 +45,4 @@
 	});
 </script>
 
-<div bind:this={rootEl} class="root"></div>
-
-<style>
-	.root {
-		height: 92svh;
-	}
-</style>
+<div bind:this={rootEl} class="root h-[90vh]"></div>

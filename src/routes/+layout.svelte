@@ -16,7 +16,7 @@
 </script>
 
 <div>
-	{#if isLoading}
+	{#if $isLoading}
 		<Loading />
 	{:else}
 		<Header />

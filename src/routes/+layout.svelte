@@ -6,6 +6,7 @@
 	import Menu from '../common/Menu.svelte';
 	import Header from '../common/Header.svelte';
 	import Footer from '../common/Footer.svelte';
+	import Loading from '../common/Loading.svelte';
 
 	initI18n();
 
@@ -15,8 +16,8 @@
 </script>
 
 <div>
-	{#if $isLoading}
-		<img class="loading" src="/loading.svg" alt="Please wait..." />
+	{#if isLoading}
+		<Loading />
 	{:else}
 		<Header />
 

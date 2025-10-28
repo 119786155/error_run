@@ -2,9 +2,9 @@
 	import { createElement } from 'react';
 	import { createRoot } from 'react-dom/client';
 	import '@excalidraw/excalidraw/index.css';
+	import Loading from '../../common/Loading.svelte';
 
 	let rootEl;
-
 	let theme = $state('');
 
 	const setTheme = (isDark) => {
@@ -45,4 +45,4 @@
 	});
 </script>
 
-<div bind:this={rootEl} class="root h-[90vh]"></div>
+<div bind:this={rootEl} class="root h-[90vh]"><Loading /></div>

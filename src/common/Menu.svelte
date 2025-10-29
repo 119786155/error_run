@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
-	import { page } from '$app/state';
+	import { _ } from 'svelte-i18n'
+	import { page } from '$app/state'
 </script>
 
 <nav class="menu-container glass">

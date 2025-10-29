@@ -1,6 +1,6 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	import Story from './Story.svelte';
+	import { _ } from 'svelte-i18n'
+	import Story from './Story.svelte'
 </script>
 
 <svelte:head>

@@ -1,6 +1,6 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	import Grid from './Grid.svelte';
+	import { _ } from 'svelte-i18n'
+	import Grid from './Grid.svelte'
 </script>
 
 <svelte:head>

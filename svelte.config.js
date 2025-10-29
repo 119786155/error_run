@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-static'
 
 const config = {
 	kit: {
@@ -10,6 +10,6 @@ const config = {
 			strict: true
 		})
 	}
-};
+}
 
-export default config;
+export default config

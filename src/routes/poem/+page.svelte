@@ -1,6 +1,6 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	import Poem from './Poem.svelte';
+	import { _ } from 'svelte-i18n'
+	import Poem from './Poem.svelte'
 </script>
 
 <svelte:head>

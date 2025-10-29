@@ -1,12 +1,12 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	import Draw from './Draw.svelte';
+	import { _ } from 'svelte-i18n'
+	import Draw from './Draw.svelte'
 
-	let excalidrawAPI = $state();
+	let excalidrawAPI = $state()
 
 	$effect(() => {
-		excalidrawAPI?.onChange(console.log);
-	});
+		excalidrawAPI?.onChange(console.log)
+	})
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
 <script>
-	import { RevoGrid } from '@revolist/svelte-datagrid';
+	import { RevoGrid } from '@revolist/svelte-datagrid'
 
 	const source = [
 		{
@@ -10,21 +10,21 @@
 			name: '2',
 			details: 'Item 2'
 		}
-	];
+	]
 
 	const columns = [
 		{
 			prop: 'name',
 			name: 'First',
 			cellTemplate(h, { value }) {
-				return h('span', { style: { background: 'red' } }, value);
+				return h('span', { style: { background: 'red' } }, value)
 			}
 		},
 		{
 			prop: 'details',
 			name: 'Second'
 		}
-	];
+	]
 </script>
 
 <RevoGrid {source} {columns} />

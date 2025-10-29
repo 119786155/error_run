@@ -1,6 +1,6 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	import I18nSelector from './I18nSelector.svelte';
+	import { _ } from 'svelte-i18n'
+	import I18nSelector from './I18nSelector.svelte'
 </script>
 
 <footer>

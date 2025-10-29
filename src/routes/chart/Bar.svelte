@@ -1,9 +1,9 @@
 <script>
-	import { onMount } from 'svelte';
-	import Chart from 'chart.js/auto';
+	import { onMount } from 'svelte'
+	import Chart from 'chart.js/auto'
 
-	let ctx;
-	let chartCanvas;
+	let ctx
+	let chartCanvas
 	const config = {
 		type: 'bar',
 		data: {
@@ -23,12 +23,12 @@
 				}
 			}
 		}
-	};
+	}
 
 	onMount(() => {
-		ctx = chartCanvas.getContext('2d');
-		new Chart(ctx, config);
-	});
+		ctx = chartCanvas.getContext('2d')
+		new Chart(ctx, config)
+	})
 </script>
 
 <div class="container">

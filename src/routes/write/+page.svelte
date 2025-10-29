@@ -1,6 +1,6 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	import Editor from './Editor.svelte';
+	import { _ } from 'svelte-i18n'
+	import Editor from './Editor.svelte'
 </script>
 
 <svelte:head>

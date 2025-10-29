@@ -28,12 +28,9 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"@excalidraw/excalidraw": "^0.18.0",
 		"@kurkle/color": "^0.4.0",
 		"@revolist/svelte-datagrid": "^4.17.3",
 		"chart.js": "^4.5.0",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
 		"svelte-i18n": "^4.0.1",
 		"svelte-lexical": "^0.6.2"
 	}

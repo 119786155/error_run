@@ -31,7 +31,6 @@
 		"@kurkle/color": "^0.4.0",
 		"@revolist/svelte-datagrid": "^4.17.3",
 		"chart.js": "^4.5.0",
-		"svelte-i18n": "^4.0.1",
-		"svelte-lexical": "^0.6.2"
+		"svelte-i18n": "^4.0.1"
 	}
 }
